@@ -3,6 +3,7 @@
     --accent-color: #2196F3;
     --text-color-wht: #FFFFFF;
     --text-color-gray:#757575;
+    --text-color-soc: #AFB1B8;
     --drk-bg:#2F303A;
     --light-bg:#F5F4FA;
     --white-rgba:rgba(255, 255, 255, 0.6);
@@ -95,6 +96,11 @@ img {
 }
 .nav{
     color: var(--text-color-blck);
+}
+.contact-mail{
+   margin-right: 10px;
+   display: flex;
+   align-items: center;
 }
 
 /* Header */
@@ -217,6 +223,7 @@ img {
 }
 .team-text{
     font-weight: 400px;
+    margin-bottom: 16px;
 }
 .comand-item{
     text-align: center;
@@ -229,6 +236,30 @@ img {
     padding: 30px;
 }
  
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.socials-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+   
+}
+.socials-icon{
+    fill: var(--text-color-soc);
+}
+.socials-link:hover{
+    background-color: var(--accent-color);
+}
+.socials-link:hover .socials-icon{
+    fill: var(--text-color-wht);
+}
 /* Секція футер */
 
 .adress{
