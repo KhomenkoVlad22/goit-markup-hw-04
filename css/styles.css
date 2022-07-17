@@ -181,6 +181,15 @@ img {
  text-transform: uppercase;
  margin-bottom: 10px;
 }
+.descrip-other{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    border-radius: 4px;
+    background:#F5F4FA;
+    margin-bottom: 30px;
+}
 
 
 /* Секція про нас */
