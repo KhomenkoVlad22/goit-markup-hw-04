@@ -98,7 +98,12 @@ img {
     color: var(--text-color-blck);
 }
 .contact-mail{
+    fill: currentColor;
+    align-self: center;
    margin-right: 10px;
+}
+.header-link a:hover{
+    color: var(--accent-color);
 }
 
 /* Header */
