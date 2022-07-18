@@ -318,15 +318,17 @@ img {
 }
 /* Секція футер */
 .footer-container{
-    display: block;
-    align-items: center;
-    justify-content: center;
+   display: flex;
+   gap: 70px;}
+
+.adress-container{
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .adress{
     font-style: inherit;
     color: var(--white-rgba);
 }
-
 .footer{
     padding-top: 60px;
     padding-bottom: 60px ;
@@ -344,9 +346,8 @@ img {
     margin-bottom : 20px;
     display: block;
 }
-.footer-socials{
+/* Social-Footer */
 
-}
 
 
 /* Портфолио */
