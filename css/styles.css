@@ -348,7 +348,6 @@ display: flex;
 
 /* Портфолио */
 
-
 .filter-btn {
     text-align: center;
     font-family: inherit;
@@ -379,11 +378,13 @@ display: flex;
 .filter-btn:hover {
     background-color: var(--accent-color);
     color: var(--text-color-wht);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-btn:focus {
     background-color: var(--accent-color);
     color: var(--text-color-wht);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .work-title {
@@ -394,19 +395,25 @@ display: flex;
     margin-bottom: 4px;
 
 }
-
 .work-text {
     font-size: 16px;
     line-height: 1.87;
-
 }
-
 .work-item {
     background-color: var(--text-color-wht);
 }
-
 .work-description {
     padding: 20px 24px;
     background: var(--text-color-wht);
     border: 1px solid #EEEEEE;
+}
+.work-list .link {
+    display: flex;
+    flex-direction: column;
+}
+.work-list .work-item .link:hover,
+.work-list .work-item .link:focus{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
