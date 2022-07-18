@@ -317,7 +317,11 @@ img {
     border: 1px solid var(--accent-color);
 }
 /* Секція футер */
-
+.footer-container{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
 .adress{
     font-style: inherit;
     color: var(--white-rgba);
@@ -340,11 +344,10 @@ img {
     margin-bottom : 20px;
     display: block;
 }
-.footer-list{
-display: flex;
- gap: 9px;
- flex-direction: column;
+.footer-socials{
+
 }
+
 
 /* Портфолио */
 
