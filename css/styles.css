@@ -99,11 +99,11 @@ img {
     color: var(--text-color-blck);
 }
 .contact-mail{
-    fill: currentColor;
-    align-self: center;
+   fill: currentColor;
    margin-right: 10px;
 }
-.header-link a:hover{
+.header-link a:hover, 
+.header-link a:focus{
     color: var(--accent-color);
 }
 
@@ -174,7 +174,7 @@ img {
     cursor: pointer;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
     font-family: inherit;
@@ -202,7 +202,7 @@ img {
     justify-content: center;
     height: 120px;
     border-radius: 4px;
-    background:#F5F4FA;
+    background:var(--light-bg);
     margin-bottom: 30px;
 }
 
@@ -286,9 +286,8 @@ img {
 }
 
 /* Постійні клієнти */
-.regular-list{
-    display: flex;
-}
+
+
 .regular-title{
     text-align: center;
     font-size: 36px;
@@ -297,16 +296,15 @@ img {
     color: var(--text-color-blck);
     margin-bottom: 50px;
 }
-.regular-list .regular-item:not(:last-child) {
-    margin-right: var(--card-gap);
-}
+
 .regular-item .link{
     display: flex;
     align-items: center;
     padding: 16px 32px;
     justify-content: center;
-    border: 1px solid #AFB1B8;
+    border: 1px solid currentColor;
     border-radius: 4px;
+    color: var(--text-color-soc);
 }
 .regular-icon{
     fill:currentColor
@@ -314,12 +312,16 @@ img {
 .regular-item .link:hover,
 .regular-item .link:focus{
     color: var(--accent-color);
-    border: 1px solid var(--accent-color);
+}
+.regular-list{
+    --card-item: 6;
 }
 /* Секція футер */
 .footer-container{
    display: flex;
-   gap: 70px;}
+   gap: 70px;
+   align-items: baseline;
+}
 
 .adress-container{
     padding-top: 60px;
@@ -346,8 +348,27 @@ img {
     margin-bottom : 20px;
     display: block;
 }
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.footer-title{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--text-color-wht);
+    margin-bottom: 20px;
+}
 /* Social-Footer */
-
+.footer-cta .socials-link{
+    fill: var(--text-color-wht);
+    background-color: rgba(255, 255, 255, 0.1);;
+}
 
 
 /* Портфолио */
@@ -417,7 +438,5 @@ img {
 }
 .work-list .work-item .link:hover,
 .work-list .work-item .link:focus{
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
