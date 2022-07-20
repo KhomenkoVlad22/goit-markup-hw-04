@@ -314,6 +314,7 @@ img {
 }
 .regular-list {
   --card-item: 6;
+  --card-gap: 25px;
 }
 /* Секція футер */
 .footer-container {
